@@ -1,0 +1,61 @@
+# Security Agent - Git Ignore
+# ============================
+
+# ============================================================================
+# SENSITIVE FILES - NEVER COMMIT THESE
+# ============================================================================
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# API keys and credentials
+*.key
+*.pem
+*.secret
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# ============================================================================
+# LOGS AND DATA
+# ============================================================================
+
+# Agent logs (may contain sensitive investigation data)
+audit.log
+transmission_audit.log
+*.log
+
+# Conversation logs
+conversations/
+
+# ============================================================================
+# IDE / EDITOR
+# ============================================================================
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
